@@ -380,11 +380,11 @@ Apify.main(async () => {
                             btn.click();
                         }
                     }
-                    // throw new InfoError(`Content needs login to work, this will be retried but most likely won't work as expected`, {
-                    //     url: request.url,
-                    //     namespace: 'login',
-                    //     userData,
-                    // });
+                    throw new InfoError(`Content needs login to work, this will be retried but most likely won't work as expected`, {
+                        url: request.url,
+                        namespace: 'login',
+                        userData,
+                    });
                 }
 
                 if (userData.useMobile) {
