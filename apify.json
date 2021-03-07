@@ -1,6 +1,7 @@
 {
-	"name": "actor-quick-start",
-	"version": "0.0",
+	"name": "facebook-page-crawler",
+	"version": "4.1",
 	"buildTag": "latest",
-	"env": null
+	"env": null,
+	"template": "apify_project"
 }

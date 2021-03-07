@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "es2018",
+        "module": "commonJS",
+        "allowSyntheticDefaultImports": false,
+        "esModuleInterop": false,
+        "alwaysStrict": true,
+        "moduleResolution": "node",
+        "strict": true,
+        "noFallthroughCasesInSwitch": true,
+        "newLine": "LF",
+        "strictNullChecks": true,
+        "resolveJsonModule": true,
+        "lib": [
+            "dom",
+            "es2020.string",
+            "es2020.promise",
+            "es2019.array",
+            "es2018.asynciterable",
+            "dom.iterable"
+        ],
+        "outDir": "./lib",
+        "rootDir": "./src",
+        "noImplicitAny": true
+    },
+    "include": [
+        "./augment.d.ts",
+        "./src/*.ts"
+    ]
+}

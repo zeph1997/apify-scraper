@@ -1,0 +1,52 @@
+{
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "@apify"
+    ],
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "modules": true
+        },
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "quotes": 0,
+        "import/extensions": 0,
+        "arrow-parens": 0,
+        "camelcase": 0,
+        "max-len": 0,
+        "no-undef": 0,
+        "no-unused-expressions": 1,
+        "import/first": 0,
+        "@typescript-eslint/explicit-module-boundary-types": 0,
+        "@typescript-eslint/no-floating-promises": 2,
+        "@typescript-eslint/no-unused-vars": [2, { "args": "none" }],
+        "@typescript-eslint/semicolon": 0,
+        "@typescript-eslint/camelcase": 0,
+        "@typescript-eslint/no-implicit-dependencies": 0,
+        "@typescript-eslint/ordered-imports": 0,
+        "@typescript-eslint/object-literal-sort-keys": 0,
+        "@typescript-eslint/no-submodule-imports": 0,
+        "@typescript-eslint/no-unused-expression": 0,
+        "@typescript-eslint/trailing-comma": 0,
+        "@typescript-eslint/interface-name": 0,
+        "@typescript-eslint/no-string-literal": 0,
+        "@typescript-eslint/explicit-function-return-type": 0,
+        "@typescript-eslint/no-explicit-any": 0,
+        "@typescript-eslint/no-non-null-assertion": 0
+    }
+}
