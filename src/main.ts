@@ -365,6 +365,21 @@ Apify.main(async () => {
 
             try {
                 if (page.url().includes('?next=')) {
+                    for (const btn of document.querySelectorAll<HTMLInputElement>('[id="email"]')) {
+                        if (btn) {
+                            btn.value = "smudsc@gmail.com";
+                        }
+                    }
+                    for (const btn of document.querySelectorAll<HTMLInputElement>('[id="pass"]')) {
+                        if (btn) {
+                            btn.value = "idpG12T5!";
+                        }
+                    }
+                    for (const btn of document.querySelectorAll<HTMLButtonElement>('[id="loginbutton"]')) {
+                        if (btn) {
+                            btn.click();
+                        }
+                    }
                     throw new InfoError(`Content needs login to work, this will be retried but most likely won't work as expected`, {
                         url: request.url,
                         namespace: 'login',
